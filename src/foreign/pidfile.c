@@ -202,7 +202,7 @@ pidfile_read(const char *path, pid_t *pidptr)
 		return (EINVAL);
 
 	return (0);
-}
+};
 
 struct pidfh *
 pidfile_open(const char *path, mode_t mode, pid_t *pidptr)
@@ -371,3 +371,4 @@ pidfile_remove(struct pidfh *pfh)
 
 	return (_pidfile_remove(pfh, 1));
 }
+;
